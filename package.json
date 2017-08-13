@@ -30,6 +30,8 @@
     "piper-js": "^0.20.1"
   },
   "devDependencies": {
+    "i": "^0.3.5",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
     "webpack": "^3.5.4",
     "worker-loader": "^0.8.1"
   }
