@@ -2,8 +2,7 @@ import {
   WebWorkerService,
   countingIdProvider
 } from 'piper-js/web-worker';
+import pYinWorker from 'worker-loader!./worker-server.js';
 
-const MyWorker = require('worker-loader!./worker-server.js');
-
-const test = new WebWorkerService(new MyWorker(), countingIdProvider(0));
+const test = new WebWorkerService(new pYinWorker(), countingIdProvider(0));
 
