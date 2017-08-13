@@ -1,4 +1,4 @@
 import {WebWorkerServer} from 'piper-js/web-worker';
-importScripts('pyin.asm.umd.js');
-console.warn('hello worker');
-console.warn(WebWorkerServer);
+import {EmscriptenSynchronousService} from 'piper-js/Emscripten';
+importScripts('pyin.asm.umd.js'); // Provides PYinModule, without bundling it with webpack
+new WebWorkerServer(self, new EmscriptenSynchronousService(PYinModule()));
