@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Bundle Test</title>
+  </head>
+  <body>
+    <div id="results"></div>
+  </body>
+  <script src="pyin.umd.js"></script>
+  <script>
+    const service = pYIN.createService();
+    service.list({}).then(res => {
+      document.getElementById('results').innerHTML = 
+        `Expected ${3} extractors, got ${res.available.length}`;
+    });
+  </script>
+</html>
