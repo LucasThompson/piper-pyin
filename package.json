@@ -1,0 +1,35 @@
+{
+  "name": "@extractors/pyin",
+  "version": "1.0.0",
+  "description": "pYIN Monophonic pitch and note tracking Vamp plugin, wrapped as piper service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LucasThompson/piper-pyin.git"
+  },
+  "keywords": [
+    "pitch-detection",
+    "pitch",
+    "features",
+    "mir",
+    "piper",
+    "notes",
+    "music",
+    "singing"
+  ],
+  "author": "Lucas Thompson",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/LucasThompson/piper-pyin/issues"
+  },
+  "homepage": "https://github.com/LucasThompson/piper-pyin#readme",
+  "dependencies": {
+    "piper-js": "^0.20.1"
+  },
+  "devDependencies": {
+    "webpack": "^3.5.4"
+  }
+}
