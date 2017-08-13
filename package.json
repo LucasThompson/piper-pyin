@@ -2,9 +2,10 @@
   "name": "@extractors/pyin",
   "version": "1.0.0",
   "description": "pYIN Monophonic pitch and note tracking Vamp plugin, wrapped as piper service",
-  "main": "index.js",
+  "main": "pyin.umd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "webpack"
   },
   "repository": {
     "type": "git",
