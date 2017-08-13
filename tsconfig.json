@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "sourceMap": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "outDir": "./",
+    "module": "commonjs",
+    "declaration": true,
+    "lib": ["es2016", "dom"]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "worker-server.ts"
+  ]
+}
