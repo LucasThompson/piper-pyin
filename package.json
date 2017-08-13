@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "pYIN Monophonic pitch and note tracking Vamp plugin, wrapped as piper service",
   "main": "pyin.umd.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "webpack"
+    "prepare": "npm run build-client && webpack",
+    "build-client": "npm run build-worker && tsc -p ./tsconfig.json",
+    "build-worker": "tsc -p ./tsconfig.worker.json"
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,7 @@
     "piper-js": "^0.20.1"
   },
   "devDependencies": {
+    "typescript": "^2.4.2",
     "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
     "webpack": "^3.5.4",
     "worker-loader": "^0.8.1"
