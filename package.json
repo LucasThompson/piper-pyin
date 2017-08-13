@@ -7,8 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "npm run build-client && webpack",
-    "build-client": "npm run build-worker && tsc -p ./tsconfig.json",
-    "build-worker": "tsc -p ./tsconfig.worker.json"
+    "build-client": "tsc -p ./tsconfig.json"
   },
   "repository": {
     "type": "git",

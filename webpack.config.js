@@ -8,6 +8,9 @@ module.exports = {
     library: "pYIN",
 		libraryTarget: "umd"
 	},
+	module: {
+		noParse: /pyin.asm.umd/
+	},
 	plugins: [
 		new webpack.LoaderOptionsPlugin({
 			options: {
@@ -22,7 +25,8 @@ module.exports = {
 		new UglifyJSPlugin(
       {
         sourceMap: false,
-        uglifyOptions: { mangle: false } // seems there is a bug otherwise
+				uglifyOptions: { mangle: false }, // seems there is a bug otherwise,
+				exclude: /^pyin.asm.umd.js$/
       }
     )
 	]
