@@ -1,6 +1,6 @@
 {
   "name": "@extractors/pyin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "pYIN Monophonic pitch and note tracking Vamp plugin, wrapped as piper service",
   "main": "pyin.umd.js",
   "typings": "index.d.ts",
