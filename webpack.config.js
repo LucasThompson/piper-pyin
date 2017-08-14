@@ -26,7 +26,7 @@ module.exports = {
       {
         sourceMap: false,
 				uglifyOptions: { mangle: false }, // seems there is a bug otherwise,
-				exclude: /^pyin.asm.umd.js$/
+				exclude: /pyin.asm.umd/
       }
     )
 	]
