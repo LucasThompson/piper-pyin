@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/LucasThompson/piper-pyin#readme",
   "dependencies": {
-    "piper-js": "^0.20.1"
+    "piper-js": "^0.21.0"
   },
   "devDependencies": {
     "typescript": "^2.4.2",
